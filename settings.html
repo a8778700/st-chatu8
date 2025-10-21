@@ -37,6 +37,44 @@
         </div>
     </div>
 </div>
+<section id="stc8-random-ten" class="stc8-card">
+  <h3>随机十个标签（作者/画师）</h3>
+  <p class="stc8-sub">一键抽取10个并复制；可插入到聊天输入框。热键：<kbd>Alt</kbd>+<kbd>R</kbd></p>
+
+  <div class="stc8-row">
+    <label>候选池</label>
+    <select id="stc8-rand-pool">
+      <option value="artists">artists.json（内置）</option>
+      <option value="custom">自定义（在下方文本框逐行写）</option>
+    </select>
+  </div>
+
+  <div class="stc8-row">
+    <label>自定义候选</label>
+    <textarea id="stc8-rand-custom" placeholder="每行一个；仅当选择“自定义”时生效" rows="5"></textarea>
+  </div>
+
+  <div class="stc8-row">
+    <label>分隔符</label>
+    <select id="stc8-rand-sep">
+      <option value=", ">逗号 + 空格</option>
+      <option value="\n">换行</option>
+      <option value="; ">分号 + 空格</option>
+    </select>
+  </div>
+
+  <div class="stc8-row">
+    <button id="stc8-rand-generate" class="stc8-btn">🔁 随机十个并复制</button>
+    <button id="stc8-rand-insert" class="stc8-btn">📥 插入到聊天输入框</button>
+    <button id="stc8-rand-clear" class="stc8-btn stc8-ghost">🧹 清空</button>
+  </div>
+
+  <div class="stc8-row">
+    <textarea id="stc8-rand-output" class="stc8-output" readonly rows="3" placeholder="结果会显示在这里"></textarea>
+  </div>
+</section>
+
 <div id="st-chatu8-fab" style="display: none;">
     <i class="fa-solid fa-paintbrush"></i>
 </div>
+
